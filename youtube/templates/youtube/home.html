@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <link rel="stylesheet" href="{%static 'css/utility.css'%}">
+    <link rel="shortcut icon" href="{%static 'youtube/favi.png' %}" type="image/x-icon">
+</head>
+<body>
+
+    <nav>
+        <div class="left-section-nav">
+            <div class="hamburger">
+                <img src="{%static 'youtube/hamburger.svg' %}" alt="">
+            </div>
+            <div class="logo">
+                <img src="{%static 'youtube/logo.svg' %}" alt="">
+            </div>
+        </div>
+        <div class="middle-section">
+            <div class="first">
+                <span class="inputhold">
+                    <input type="search" name="" id="" placeholder="Search">
+                </span>        
+                <span class="searchicon">
+                    <button>
+                        <img src="{%static 'youtube/search.svg' %}" alt="">
+                    </button>
+                </span>        
+            </div>
+            <div class="mike">
+                <span>
+                    <img src="{%static 'youtube/mike.svg' %}" alt="" width="20">
+                </span>
+            </div>
+        </div>
+        <div class="right-section">
+            <button>
+                <span>+</span>Create
+            </button>
+            <div class="notification">
+                <img src="{%static 'youtube/notification.svg'%}" alt="">
+            </div>
+            <div class="profile">
+                <div class="circle">
+                    <button>
+                        <div>
+                            <img src="{%static 'youtube/download.jpg'%}" alt=""></button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="left-section box">
+            <div class="effect">
+                <div class="parent first">
+                    <ul>
+                    <li><img src="{%static 'youtube/home.svg'%}" alt=""> Home</li>
+                    <li><img src="{%static 'youtube/shorts.svg'%}" alt=""> Shorts</li>
+                    <li><img src="{%static 'youtube/sub.svg'%}" alt=""> Subscription</li>
+                    <li><img src="{% static 'youtube/you.svg' %}" alt=""> You</li>
+                    <li><img src="{% static 'youtube/download.svg' %}" alt=""> Downloads</li>
+                    </ul>
+                    </div>
+            </div>
+            <div class="effect2">
+
+                <div class="parent first">
+                    <ul>
+                        <li><img src="{%static 'youtube/home.svg'%}" alt=""> Home</li>
+                        <li><img src="{%static 'youtube/shorts.svg'%}" alt="">Shorts</li>
+                        <li><img src="{%static 'youtube/sub.svg'%}" alt="">Subscription</li>
+                    </ul>
+                </div>
+                <div class="parent second">
+                    <h4>You <img src="{%static 'youtube/rightarrow.svg'%}" alt=""></h4>
+                    <ul>
+                        <li><img src="{%static 'youtube/history.svg'%}" alt="">History</li>
+                        <li><img src="{%static 'youtube/playlist.svg'%}" alt="">Playlists</li>
+                        <li><img src="{%static 'youtube/yovideo.svg'%}" alt=""> Your Videos</li>
+                        <li><img src="{%static 'youtube/watchlater.svg'%}" alt=""> Watch Later</li>
+                        <li><img src="{%static 'youtube/like.svg'%}" alt=""> Liked Videos</li>
+                        <li><img src="{%static 'youtube/download.svg'%}" alt="">Downloads</li>
+                    </ul>
+                </div>
+                <div class="parent third">
+                    <h4>Subscriptions</h4>
+                </div>
+                <div class="parent fourth">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><img src="{%static 'youtube/trending.svg'%}" alt="">Trending</li>
+                        <li><img src="{%static 'youtube/music.svg'%}" alt="">Music</li>
+                        <li><img src="{%static 'youtube/gaming.svg'%}" alt="">Gaming</li>
+                        <li><img src="{%static 'youtube/sports.svg'%}" alt="">Sports</li>
+                    </ul>
+                </div>
+                <div class="parent fifth">
+                    <h4>More From Youtube</h4>
+                    <ul>
+                        <li><img src="{%static 'youtube/premium.svg'%}" alt="">YouTube Premium</li>
+                        <li><img src="{%static 'youtube/Studio.svg'%}" alt="">YouTube Studio</li>
+                        <li><img src="{%static 'youtube/yMusic.svg'%}" alt="">YouTube Music</li>
+                        <li><img src="{%static 'youtube/Kids.svg'%}" alt="">YouTube Kids</li>
+                    </ul>
+                </div>
+                <div class="parent sixth">
+                    <ul>
+                        <li><img src="{%static 'youtube/Settings.svg'%}" alt="">Settings</li>
+                        <li><img src="{%static 'youtube/Report.svg'%}" alt="">Report History</li>
+                        <li><img src="{%static 'youtube/Help.svg'%}" alt="">Help</li>
+                        <li><img src="{%static 'youtube/Send.svg'%}" alt="">Send Feedback</li>
+                    </ul>
+                </div>
+                <footer>
+                    <div class="firstfooter">
+                        <a slot="guide-links-primary" href="https://www.youtube.com/about/">About</a>
+                        <a slot="guide-links-primary" href="https://www.youtube.com/about/press/">Press</a>
+                        <a slot="guide-links-primary" href="https://www.youtube.com/about/copyright/">Copyright</a>
+                        <a slot="guide-links-primary" href="/t/contact_us/">Contact us</a>
+                        <a slot="guide-links-primary" href="https://www.youtube.com/creators/">Creator</a>
+                        <a slot="guide-links-primary" href="https://www.youtube.com/ads/">Advertise</a>
+                        <a slot="guide-links-primary" href="https://developers.google.com/youtube">Developers</a>
+                    </div>
+                    <div class="secondfooter">
+                        <a slot="guide-links-secondary" href="/t/terms">Terms</a>
+                        <a slot="guide-links-secondary" href="/t/privacy">Privacy</a>
+                        <a slot="guide-links-secondary" href="https://www.youtube.com/about/policies/">Policy &amp; Safety</a>
+                        <a slot="guide-links-secondary" href="https://www.youtube.com/howyoutubeworks?utm_campaign=ytgen&amp;utm_source=ythp&amp;utm_medium=LeftNav&amp;utm_content=txt&amp;u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen">How YouTube works</a>
+                        <a slot="guide-links-secondary" href="/new">Test new features</a>
+                    </div>
+                    <p>© 2025 Google LLC</p>
+                </footer>
+            </div>
+        </div>
+        <div class="right-section">
+             <div class="right-section-down">
+                {% for x in video %}
+                <div class="card">
+                    <div class="video-div">
+                        <video class="myvideo" src="{{x.video.url}}" muted a poster="{{x.thumbnail.url}}"></video>
+                    </div>
+                    <div class="below">
+                        <div class="channel-profile">
+                            <img src="{{x.channelphoto.url}}" alt="">
+                        </div>
+                        <div class="desc">
+                            <div class="description">{{x.description}}</div>
+                            <div class="channelname">{{x.channelname}}</div>
+                            <div class="viewstime">
+                                <div class="view">{{x.like}}</div>
+                                <div class="time">{{x.time}}</div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                {%endfor%} 
+             </div>
+        </div>
+    </section>
+    <script src="{%static 'javscript/script.js'%}"></script>
+</body>
+</html>
